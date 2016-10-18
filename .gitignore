@@ -1,0 +1,6 @@
+*.iml
+/.idea
+/.stack-work
+.idea
+.stack-work
+.DS_Store
