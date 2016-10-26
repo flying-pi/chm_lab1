@@ -12,7 +12,7 @@ x = [k*b|k <- [0,0.25,0.5,0.75,1]]
 valueTable ::  [(Double,Double)]
 valueTable = zip x y
 
-xTi = map (\(x, _) -> x +b/8) valueTable
+xTi = map (\(x, _) -> if(x +b/8 > b)then b else x +b/8 ) valueTable
 
 
 

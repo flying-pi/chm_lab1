@@ -1,6 +1,7 @@
 module Hause
  (
-    printHause
+    printHause,
+    hause
  )where
 
 import Util

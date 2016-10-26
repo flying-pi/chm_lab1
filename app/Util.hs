@@ -1,5 +1,6 @@
 module Util where
 
+import Graphics.UI.GLUT
 
 forEach :: (Num i) => (a->b->i->a)->a->i->[b]->a
 forEach _ init _ [] = init
@@ -26,3 +27,5 @@ data IterationState = IterationState {
     buf :: Double,
     stepValue :: Double
 }
+
+color3f r g b = color $ Color3 r g (b :: GLfloat)
