@@ -19,9 +19,9 @@ xTi = map (\(x, _) -> if(x +b/8 > b)then b else x +b/8 ) valueTable
 test = zip [0,1 .. 9] [k*k|k<-[0,1 .. 9]]
 
 yTest :: [Double]
-yTest = [k*k |k<-xTest]
+yTest = [sin k |k<-xTest]
 
 fac::Double->Double
 fac v = if(v<=0) then 1 else (v*(v - 1))
 
-xTest = [0,1 .. 9]
+xTest = [-5,-4.9 .. 5]

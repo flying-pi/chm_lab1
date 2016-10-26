@@ -49,4 +49,4 @@ label :: Double -> Double -> [(Double,Double,Double)]
 label position step = [(position,-step,0),(position,step,0),(step,position,0),(-step,position,0)]
 
 myPoints :: [(Double,Double,Double)]
-myPoints = map (\(x, y, z) -> ( x * step, y * step,z * step)) [( k , (hause k x y) , 0) | k <- [-(1/step),-(1/step) + step .. (1/step)]]
+myPoints = map (\(x, y, z) -> ( x * step, y * step,z * step)) [( k , (hause k xTest yTest) , 0) | k <- [-(1/step),-(1/step) + step .. (1/step)]]
